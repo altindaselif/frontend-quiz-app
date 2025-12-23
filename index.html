@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Quiz App</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-title-container"></div>
+      <div class="header-toggle-container">
+        <img
+          class="toggle-img"
+          src="images/icon-sun-dark.svg"
+          alt="Dark Sun Icon"
+        />
+        <label class="toggle-label">
+          <input class="toggle-checkbox" type="checkbox" id="header-toggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <img
+          class="toggle-img"
+          src="images/icon-moon-dark.svg"
+          alt="Dark Moon Icon"
+        />
+      </div>
+    </header>
+    <section class="start-page">
+      <main class="main-container">
+        <div class="intro-container">
+          <h1 class="intro-heading-1">Welcome to the</h1>
+          <h1 class="intro-heading-2">Frontend Quiz!</h1>
+          <p class="intro-info">Pick a subject to get started</p>
+        </div>
+        <div class="subject-container">
+          <div class="subject-option-container">
+            <p class="subject-option-img subject-html-img">
+              <img src="./images/icon-html.svg" alt="HTML icon" />
+            </p>
+            <p class="subject-option">HTML</p>
+          </div>
+          <div class="subject-option-container">
+            <p class="subject-option-img subject-css-img">
+              <img src="./images/icon-css.svg" alt="CSS icon" />
+            </p>
+            <p class="subject-option">CSS</p>
+          </div>
+          <div class="subject-option-container">
+            <p class="subject-option-img subject-js-img">
+              <img src="./images/icon-js.svg" alt="JavaScript icon" />
+            </p>
+            <p class="subject-option">JavaScript</p>
+          </div>
+          <div class="subject-option-container">
+            <p class="subject-option-img subject-acc-img">
+              <img
+                src="./images/icon-accessibility.svg"
+                alt="Accessibility icon"
+              />
+            </p>
+            <p class="subject-option">Accessibility</p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="question-page hidden">
+      <main class="main-container">
+        <div class="question-container">
+          <span class="question-number-sentence"
+            >Question <span class="question-number">6</span> of 10</span
+          >
+          <p class="question">
+            Which of these color contrast ratios defines the minimum WCAG 2.1
+            Level AA requirement for normal text?
+          </p>
+          <div class="progress-container">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+        <div class="answer-container">
+          <div class="answer-options-container">
+            <div class="answer-option-container">
+              <p class="answer-option">A</p>
+              <p class="answer">4.5 : 1</p>
+              <img
+                src="./images/icon-correct.svg"
+                class="status-icon correct-icon"
+                alt="Correct Icon"
+              />
+              <img
+                src="./images/icon-incorrect.svg"
+                class="status-icon incorrect-icon"
+                alt="Incorrect Icon"
+              />
+            </div>
+            <div class="answer-option-container">
+              <p class="answer-option">B</p>
+              <p class="answer">3 : 1</p>
+
+              <img
+                src="./images/icon-correct.svg"
+                class="status-icon correct-icon"
+                alt="Correct Icon"
+              />
+              <img
+                src="./images/icon-incorrect.svg"
+                class="status-icon incorrect-icon"
+                alt="Incorrect Icon"
+              />
+            </div>
+            <div class="answer-option-container">
+              <p class="answer-option">C</p>
+              <p class="answer">2.5 : 1</p>
+
+              <img
+                src="./images/icon-correct.svg"
+                class="status-icon correct-icon"
+                alt="Correct Icon"
+              />
+              <img
+                src="./images/icon-incorrect.svg"
+                class="status-icon incorrect-icon"
+                alt="Incorrect Icon"
+              />
+            </div>
+            <div class="answer-option-container">
+              <p class="answer-option">D</p>
+              <p class="answer">5 : 1</p>
+
+              <img
+                src="./images/icon-correct.svg"
+                class="status-icon correct-icon"
+                alt="Correct Icon"
+              />
+              <img
+                src="./images/icon-incorrect.svg"
+                class="status-icon incorrect-icon"
+                alt="Incorrect Icon"
+              />
+            </div>
+          </div>
+          <button type="button" class="submit-button">Submit Answer</button>
+          <div class="error-message-container">
+            <img
+              class="error-message-icon"
+              src="./images/icon-error.svg"
+              alt="Error Icon"
+            />
+            <p class="error-message-text">Please select an answer</p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="score-page hidden">
+      <main class="main-container">
+        <div class="outro-container">
+          <h1 class="outro-heading-1">Quiz completed</h1>
+          <h1 class="outro-heading-2">You scored...</h1>
+        </div>
+        <div class="score-container">
+          <div class="score-card-container">
+            <div class="score-subject-container">
+              <p class="score-subject-img-container">
+                <img
+                  class="score-subject-img"
+                  src="./images/icon-accessibility.svg"
+                  alt="Accessibility icon"
+                />
+              </p>
+              <p class="score-subject">Accessibility</p>
+            </div>
+            <p class="score">8</p>
+            <p class="score-total">out of 10</p>
+          </div>
+          <button type="button" class="play-again-button">Play Again</button>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
