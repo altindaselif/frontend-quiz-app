@@ -83,6 +83,11 @@ body {
   justify-content: center;
 }
 
+.main-all {
+  width: 100%;
+  max-width: 115.7rem;
+}
+
 /******************************************/
 /* --- GLOBAL / SHARED STYLES --- */
 /******************************************/
@@ -93,8 +98,6 @@ body {
 
 .header-container {
   width: 100%;
-  max-width: 115.7rem;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -170,11 +173,14 @@ body {
 /******************************************/
 .start-page {
   width: 100%;
-  max-width: 115.7rem;
 }
 
 .intro-container {
   width: 50%;
+}
+
+.intro-heading {
+  margin-bottom: var(--spacing-600);
 }
 
 .intro-heading-1 {
@@ -183,7 +189,6 @@ body {
 
 .intro-heading-2 {
   font: var(--tp-2m);
-  margin-bottom: var(--spacing-600);
 }
 
 .intro-info {
@@ -205,12 +210,15 @@ body {
   border: 0.3rem solid transparent;
   border-radius: 2.4rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
   padding: var(--spacing-300);
 
   display: flex;
   align-items: center;
   gap: var(--spacing-400);
+
+  font: inherit;
+  color: inherit;
 }
 
 .subject-option-img {
@@ -253,7 +261,6 @@ body {
 /******************************************/
 .question-page {
   width: 100%;
-  max-width: 115.7rem;
 }
 
 .question-container {
@@ -436,7 +443,6 @@ body {
 /******************************************/
 .score-page {
   width: 100%;
-  max-width: 115.7rem;
 }
 
 .outro-container {

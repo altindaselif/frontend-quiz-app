@@ -10,8 +10,8 @@ This is a Frontend Quiz App that you can use on your websites.
 
 ## Links
 
-- **GitHub Repository:** [View Code](https://github.com/altindaselif/tip-calculator-app-main)
-- **Live Demo:** [View Live Site](https://altindaselif.github.io/tip-calculator-app-main/)
+- **GitHub Repository:** [View Code](https://github.com/altindaselif/frontend-quiz-app)
+- **Live Demo:** [View Live Site](https://altindaselif.github.io/frontend-quiz-app/)
 
 ## Built With
 
